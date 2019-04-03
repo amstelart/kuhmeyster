@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Кухмейстер</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+
+  <!-- <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png"> -->
+  <!-- <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png"> -->
+  <link rel="shortcut icon" href="img/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet" media="screen">
+
+  <script>
+    // Маркер работающего javascript
+    document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+    document.addEventListener('DOMContentLoaded', function(){
+      if (window.isMobile !== undefined) {
+        // console.log(isMobile);
+        if(isMobile.any) {
+          var rootClasses = ' is-mobile';
+          for (key in isMobile) {
+            if(typeof isMobile[key] === 'boolean' && isMobile[key] && key !== 'any') rootClasses += ' is-mobile--'+key;
+            if(typeof isMobile[key] === 'object' && key !== 'other') {
+              for (type in isMobile[key]) {
+                if(isMobile[key][type]) rootClasses += ' is-mobile--'+key+'-'+type;
+              }
+            }
+          }
+          document.documentElement.className += rootClasses;
+        }
+      }
+      else {
+        console.log('Классы для мобильных не добавлены: в сборке отсутствует isMobile.js');
+      }
+    });
+
+  </script>
+
+</head>
+
+<body>
+
+  <div class="page__inner">
+
+    <div class="page__content">
+
+      <header class="page-header" role="banner">
+        <div class="page-header__inner">
+
+          <div class="logo">
+            <img src="img/logo.png" alt="Кухмейстер">
+          </div>
+
+          <nav id="main-nav" class="main-nav" role="navigation">
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a href="#land_1" data-scroll-link class="main-nav__link">
+                  Сервис и ремонт
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a href="#land_2" data-scroll-link class="main-nav__link">
+                  Подбор оборудования
+                </a>
+              </li>
+              <li class="main-nav__item main-nav__item--active">
+                <a href="#land_3" data-scroll-link class="main-nav__link">
+                  Нам доверяют
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a href="#land_4" data-scroll-link class="main-nav__link">
+                  Контакты
+                </a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="fast-cont">
+            <div class="fast-cont__item">
+              <a class="fast-cont__phone-link" href="tel:+79224491114">+7 (922) 440-11-14</a>
+            </div>
+            <div class="fast-cont__item">
+              <a class="fast-cont__call-link" href="#modal-call" data-toggle="modal">Заказать звонок</a>
+            </div>
+          </div>
+
+          <button id="main-nav-toggler" class="main-nav__toggler  burger"><span></span></button>
+
+        </div>
+      </header>
+
+
+      <main role="main" class="main">
+
+        <section class="main__section intro">
+          <div class="main__section-inner">
+            <div class="intro__body">
+              <h1 class="intro__title">Первое обслуживание оборудования <span>бесплатно</span></h1>
+              <p class="intro__text">Не дожидайтесь пока оборудование выйдет из строя - <span>проверьте</span> его состояние </p>
+              <a href="#modal-service" data-toggle="modal" class="btn">Заявка на обслуживание</a>
+            </div>
+          </div>
+          <div class="intro__image">
+            <!-- <img src="img/intro_img.jpg" alt=""> -->
+          </div>
+        </section>
+
+        <section class="main__section about">
+          <div class="main__section-inner">
+            <div class="about__header">
+              <h2 class="about__title">Кухмейстер</h2>
+              <p class="about__sub-title">надежная компания</p>
+            </div>
+            <div class="about__text">
+              <div class="about__text-dek-wrap">
+                <div class="about__text-dek"></div>
+              </div>
+              <p>Мы с 2008 года занимаемся сервисным обслуживанием, ремонтом холодильного
+              и торгово-технологического оборудования любой сложности.
+              Также мы занимаемся поставками оборудования и запасных частей.</p>
+              <div class="about__text-author-wrap">
+                <div class="about__text-author">
+                  Владимир Галкин <br>
+                  <span>Директор</span>
+                </div>
+              </div>
+            </div>
+            <a href="#" class="btn">Задать пвопрос</a>
+          </div>
+        </section>
+
+        <section id="land_1" class="main__section work">
+          <div class="main__section-inner">
+            <div class="work__header">
+              <h2 class="work__title"><span>Ремонт</span> и <span>обслуживание</span> торгово-технологического оборудования любой сложности</h2>
+            </div>
+            <div class="work__cards-wrap">
+              <div class="work__card">
+                <div class="work__card-img">
+                  <img src="img/work_card_01.png" alt="">
+                </div>
+                <div class="work__card-title">Тепловое оборудование</div>
+              </div>
+              <div class="work__card">
+                <div class="work__card-img">
+                  <img src="img/work_card_02.png" alt="">
+                </div>
+                <div class="work__card-title">Пароконвектоматы</div>
+              </div>
+              <div class="work__card">
+                <div class="work__card-img">
+                  <img src="img/work_card_03.png" alt="">
+                </div>
+                <div class="work__card-title">Посудомоечное оборудование</div>
+              </div>
+              <div class="work__card">
+                <div class="work__card-img">
+                  <img src="img/work_card_04.png" alt="">
+                </div>
+                <div class="work__card-title">Холодильное оборудование</div>
+              </div>
+              <div class="work__card">
+                <div class="work__card-img">
+                  <img src="img/work_card_05.png" alt="">
+                </div>
+                <div class="work__card-title">Электромеханическое оборудование</div>
+              </div>
+              <div class="work__card">
+                <div class="work__card-img">
+                  <img src="img/work_card_06.png" alt="">
+                </div>
+                <div class="work__card-title">Барное оборудование</div>
+              </div>
+            </div>
+            <div class="work__request">
+              <h3 class="work__request-title">Заявка на ремонт оборудования</h3>
+              <form action="" class="form work__form">
+                <label class="field-text  work__form-field">
+                  <span class="field-text__input-wrap">
+                    <input class="field-text__input icon icon--user" type="text" placeholder="Имя" id="" name="">
+                  </span>
+                </label>
+                <label class="field-text work__form-field">
+                  <span class="field-text__input-wrap">
+                    <input class="field-text__input icon icon--phone" type="text" placeholder="Телефон" id="" name="">
+                  </span>
+                </label>
+                <label class="field-text work__form-field">
+                  <span class="field-text__input-wrap">
+                    <input class="field-text__input icon icon--email" type="text" placeholder="E-mail*" id="" name="">
+                  </span>
+                </label>
+                <div class="work__form-field">
+                  <button type="submit" class="btn">Отправить заявку</button>
+                </div>
+                <div class="field-actions">
+                  <div class="field-actions__text">* — обязательные поля</div>
+                  <div class="field-checkbox">
+                    <label class="field-checkbox__name">
+                      <input class="field-checkbox__input" type="checkbox" id="" name="" checked>
+                      <span class="field-checkbox__name-text">Я согласен с условиями обработки данных</span>
+                    </label>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </section>
+
+        <section id="land_2" class="main__section services">
+          <div class="main__section-inner">
+            <h2 class="services__title">Вам необходимо новое оборудование?</h2>
+            <ul class="services__list">
+              <li class="item">
+                <div class="item__num">01</div>
+                <div class="item__text">Подберем оборудование<br> под ваш технологический<br> процесс</div>
+              </li>
+              <li class="item">
+                <div class="item__num">02</div>
+                <div class="item__text">Организуем поставку<br> по ценам завода<br> изготовителя</div>
+              </li>
+              <li class="item">
+                <div class="item__num">03</div>
+                <div class="item__text">Выполним монтаж и<br> пуско-накладочные<br> работы</div>
+              </li>
+              <li class="item">
+                <div class="item__num">04</div>
+                <div class="item__text">Обеспечим обслуживание<br> и исправное состояние<br> вашего оборудования</div>
+              </li>
+            </ul>
+            <div class="services__action">
+              <a href="#" class="btn">Подобрать оборудование</a>
+            </div>
+          </div>
+        </section>
+
+        <section class="main__section specialist">
+          <div class="main__section-inner">
+            <div class="specialist__wrap">
+              <div class="specialist__image">
+                <img src="img/specialist-img.png" alt="">
+              </div>
+              <div class="specialist__body">
+                <h3 class="specialist__title">Выскоквалифицированные специалисты</h3>
+                <p class="specialist__text">Наша профессиональная команда инженеров, постоянно повышает свою квалификацию на семинарах и тренингах мировых производителей профессионального оборудования. </p>
+                <p class="specialist__text red">Мы готовы решать задачу любой сложности</p>
+                <div class="specialist__sert">
+                  <div class="item">
+                    <img src="img/sert-prev__01.png" alt="">
+                  </div>
+                  <div class="item">
+                    <img src="img/sert-prev__02.png" alt="">
+                  </div>
+                  <div class="item">
+                    <img src="img/sert-prev__03.png" alt="">
+                  </div>
+                  <div class="item">
+                    <img src="img/sert-prev__04.png" alt="">
+                  </div>
+                  <div class="item item--x2">
+                    <img src="img/sert-prev__05.png" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="main__section okdesk">
+          <div class="main__section-inner">
+            <div class="okdesk__wrap">
+              <div class="okdesk__body">
+                <h3 class="okdesk__title">Мы используем новейшие технологии по приему и учету заявок <span>okdesk</span></h3>
+                <div class="okdesk__list">
+                  <div class="okdesk__list-item">Ваши заявки всегда на виду</div>
+                  <div class="okdesk__list-item">Мы следим за сроком выполнения работ</div>
+                  <div class="okdesk__list-item">Мы всегда на связи</div>
+                </div>
+              </div>
+              <div class="okdesk__image">
+                <img src="img/okdesk.png" alt="">
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="land_3" class="main__section partners">
+          <div class="main__section-inner">
+            <h2 class="partners__title">Нам доверяют</h2>
+            <div class="partners__list">
+              <div class="partners__item">
+                <div class="partners__item-logo">
+                  <img src="img/p_logo_01.png" alt="">
+                </div>
+                <div class="partners__item-title">KFC</div>
+              </div>
+              <div class="partners__item">
+                <div class="partners__item-logo">
+                  <img src="img/p_logo_02.png" alt="">
+                </div>
+                <div class="partners__item-title">Mc Donalds</div>
+              </div>
+              <div class="partners__item">
+                <div class="partners__item-logo">
+                  <img src="img/p_logo_03.png" alt="">
+                </div>
+                <div class="partners__item-title">Starbucks</div>
+              </div>
+              <div class="partners__item">
+                <div class="partners__item-logo">
+                  <img src="img/p_logo_04.png" alt="">
+                </div>
+                <div class="partners__item-title">ДоДо пицца</div>
+              </div>
+              <div class="partners__item">
+                <div class="partners__item-logo">
+                  <img src="img/p_logo_05.png" alt="">
+                </div>
+                <div class="partners__item-title">Travelers Coffee</div>
+              </div>
+              <div class="partners__item">
+                <div class="partners__item-logo">
+                  <img src="img/p_logo_06.png" alt="">
+                </div>
+                <div class="partners__item-title">Паб Joint</div>
+              </div>
+              <div class="partners__item">
+                <div class="partners__item-logo">
+                  <img src="img/p_logo_07.png" alt="">
+                </div>
+                <div class="partners__item-title">Донна пицца</div>
+              </div>
+              <div class="partners__item">
+                <div class="partners__item-logo">
+                  <img src="img/p_logo_08.png" alt="">
+                </div>
+                <div class="partners__item-title">Кафе Ботаника</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="land_4" class="main__section contacts">
+          <div class="main__section-inner">
+            <div class="contacts__wrap">
+              <div class="contacts__body">
+                <h2 class="contacts__title">Контакты</h2>
+                <p class="contacts__text">Мы работаем в Сургуте, Тюмени и Нижневартовске</p>
+                <ul class="contacts__list">
+                  <li class="icon icon--map">г. Сургут, ул.Григория Кукуевицкого, 15 ТЦ «ПАССАЖ»</li>
+                  <li class="icon icon--phone"><a href="#">+7 (922) 440 11 14</a></li>
+                  <li class="icon icon--time">Время работы: <br>Пн-Пт с 9:00 до 18:00</li>
+                </ul>
+                <a href="#modal-call" data-toggle="modal" class="btn">Заказать звонок</a>
+              </div>
+              <div class="contacts__map">
+                <img src="img/map.jpg" alt="">
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </main>
+
+    </div>
+
+    <div class="page__footer-wrapper">
+
+      <footer class="page-footer" role="contentinfo">
+        <div class="page-footer__inner">
+
+          <div class="logo">
+            <img src="img/logo.png" alt="Кухмейстер">
+          </div>
+
+          <nav class="main-nav page-footer__nav" role="navigation">
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a href="#land_1" class="main-nav__link">
+                  Сервис и ремонт
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a href="#land_2" class="main-nav__link">
+                  Подбор оборудования
+                </a>
+              </li>
+              <li class="main-nav__item main-nav__item--active">
+                <a href="#land_3" class="main-nav__link">
+                  Нам доверяют
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a href="#land_4" class="main-nav__link">
+                  Контакты
+                </a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="fast-cont">
+            <div class="fast-cont__item">
+              <a class="fast-cont__phone-link" href="tel:+79224491114">+7 (922) 440-11-14</a>
+            </div>
+            <div class="fast-cont__item">
+              <a class="fast-cont__call-link" href="#modal-call" data-toggle="modal">Заказать звонок</a>
+            </div>
+          </div>
+
+        </div>
+      </footer>
+
+    </div>
+
+  </div>
+
+  <div id="modal-call" class="modal" tabindex="-1" role="dialog">
+    <div class="modal__dialog" role="document">
+      <div class="modal__content">
+        <div class="modal__header">
+          <a href="#" class="close  modal__close" data-dismiss="modal" aria-label="Закрыть"><span></span></a>
+          <h4 class="modal__title">Заказать звонок</h4>
+          <p class="modal__sub-title">Мы перезвоним вам и ответим на все вопросы</p>
+        </div>
+        <div class="modal__body">
+          <form action="" class="modal__form">
+            <label class="field-text modal__form-field">
+              <span class="field-text__input-wrap">
+                <input class="field-text__input icon icon--user" type="text" placeholder="Имя" id="" name="">
+              </span>
+            </label>
+            <label class="field-text modal__form-field">
+              <span class="field-text__input-wrap">
+                <input class="field-text__input icon icon--phone" type="text" placeholder="Телефон" id="" name="">
+              </span>
+            </label>
+            <div class="modal__form-field">
+              <button type="submit" class="btn">Отправить заявку</button>
+            </div>
+          </form>
+        </div>
+        <div class="modal__footer">
+          <form action="">
+            <div class="field-actions">
+              <div class="field-checkbox">
+                <label class="field-checkbox__name">
+                  <input class="field-checkbox__input" type="checkbox" id="" name="" checked>
+                  <span class="field-checkbox__name-text">Я согласен с условиями обработки данных</span>
+                </label>
+              </div>
+              <div class="field-actions__text">* — обязательные поля</div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-service" class="modal" tabindex="-1" role="dialog">
+    <div class="modal__dialog" role="document">
+      <div class="modal__content">
+        <div class="modal__header">
+          <a href="#" class="close  modal__close" data-dismiss="modal" aria-label="Закрыть"><span></span></a>
+          <h4 class="modal__title">Заявка на обслуживание</h4>
+          <p class="modal__sub-title">Подача заявки вас ни к чему не обязывает</p>
+        </div>
+        <div class="modal__body">
+          <form action="" class="modal__form">
+            <label class="field-text modal__form-field">
+              <span class="field-text__input-wrap">
+                <input class="field-text__input icon icon--user" type="text" placeholder="Имя" id="" name="">
+              </span>
+            </label>
+            <label class="field-text modal__form-field">
+              <span class="field-text__input-wrap">
+                <input class="field-text__input icon icon--phone" type="text" placeholder="Телефон" id="" name="">
+              </span>
+            </label>
+            <label class="field-text modal__form-field">
+              <span class="field-text__input-wrap">
+                <input class="field-text__input icon icon--email" type="email" placeholder="Email*" id="" name="">
+              </span>
+            </label>
+            <div class="modal__form-field">
+              <button type="submit" class="btn">Отправить заявку</button>
+            </div>
+          </form>
+        </div>
+        <div class="modal__footer">
+          <form action="">
+            <div class="field-actions">
+              <div class="field-checkbox">
+                <label class="field-checkbox__name">
+                  <input class="field-checkbox__input" type="checkbox" id="" name="" checked>
+                  <span class="field-checkbox__name-text">Я согласен с условиями обработки данных</span>
+                </label>
+              </div>
+              <div class="field-actions__text">* — обязательные поля</div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/script.min.js"></script>
+
+</body>
+</html>
