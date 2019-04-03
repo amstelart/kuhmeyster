@@ -63,7 +63,7 @@ $line-height:                 1.375em !default;
       left: 0;
       width: 14px;
       height: 14px;
-      border: 2px solid currentColor;
+      border: 2px solid #000;
       border-radius: $border-radius;
     }
 
@@ -79,8 +79,8 @@ $line-height:                 1.375em !default;
       width: 14px;
       height: 6px;
       opacity: 0;
-      border-left: 2px solid currentColor;
-      border-bottom: 2px solid currentColor;
+      border-left: 2px solid $color-main;
+      border-bottom: 2px solid $color-main;
       transform: rotate(-45deg);
       transition: opacity $transition-time;
 

@@ -1,0 +1,45 @@
+// В этом файле должны быть стили для БЭМ-блока partners, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.partners {
+
+  $block-name:                &; // #{$block-name}__element
+
+  padding-top: 10vw;
+  padding-bottom: 10vw;
+
+  &__title {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 48px;
+    margin-top: 0;
+    margin-bottom: 40px;
+  }
+
+  &__list {
+    @include row;
+    justify-content: center;
+  }
+
+  &__item {
+    @include col();
+    @include col(xl, 3);
+    @include col(md, 4);
+    @include col(sm, 6);
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  &__item-logo {
+    min-height: 130px;
+  }
+
+  &__item-title {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 48px;
+  }
+
+}

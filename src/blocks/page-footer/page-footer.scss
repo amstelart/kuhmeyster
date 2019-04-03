@@ -5,4 +5,27 @@
 .page-footer {
 
   $block-name:                &; // #{$block-name}__element
+
+  &__inner {
+    @include container;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    min-height: 114px;
+  }
+
+  @media (max-width: $screen-md) {
+    .logo {
+      margin-bottom: 15px;
+    }
+  }
+
+  &__nav {
+    @media (max-width: ($menu-desktop-width - 1)) {
+      display: none;
+    }
+  }
 }

@@ -5,4 +5,23 @@
 .page-header {
 
   $block-name:                &; // #{$block-name}__element
+
+  border-bottom: 1px solid #ebebeb;
+  position: relative;
+
+  &__inner {
+    @include container;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    min-height: 114px;
+  }
+
+  @media (max-width: $screen-sm) {
+    .fast-cont {
+      display: none;
+    }
+  }
 }

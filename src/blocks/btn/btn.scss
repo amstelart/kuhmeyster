@@ -19,29 +19,33 @@ $border-radius:               3px !default;
   box-sizing: border-box;
   display: inline-block;
   margin: 0;
-  padding: $field-padding-vertical  $field-padding-horizontal;
+  padding: 0 15px;
+  min-width: 270px;
+  height: 64px;
   white-space: nowrap;
   vertical-align: middle;
   user-select: none;
   text-align: center;
-  font-size: 1em;
+  font-size: 16px;
   font-family: inherit;
-  line-height: $line-height;
+  line-height: 60px;
   text-decoration: none;
   text-transform: none;
-  color: $text-color;
-  border-radius: $border-radius;
-  border: 1px solid $gray-lighter;
-  background-color: $gray-lightest;
+  color: #fff;
+  border-radius: 30px;
+  border: 1px solid #4167f2;
+  border-bottom: 5px solid #173bc1;
+  background-color: #4167f2;
   background-image: none;
   cursor: pointer;
+  transition: all 0.2s;
 
   &:hover,
   &:focus {
     text-decoration: none;
-    color: $text-color;
-    background-color: darken($gray-lightest, 10%);
-    border-color: darken($gray-lighter, 12%);
+    color: #fff;
+    background-color: darken(#4167f2, 6%);
+    border-color: darken(#4167f2, 6%);
   }
 
   &:active,

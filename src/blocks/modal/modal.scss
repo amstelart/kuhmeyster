@@ -46,7 +46,7 @@ $z-index-modal:               100 !default;
     height: 100%;
 
     @media (min-width: $screen-lg) {
-      width: 600px;
+      width: 555px;
       height: auto;
 
       #{$block-name}--open & {
@@ -63,36 +63,66 @@ $z-index-modal:               100 !default;
     min-height: 100%;
     background-color: #fff;
     outline: 0;
+    border-radius: 6px;
   }
 
   &__header {
-    padding: 5px 40px 0 10px;
+    padding: 30px 40px 0 10px;
     flex-shrink: 0;
+    text-align: center;
+    margin-bottom: 30px;
   }
 
   &__title {
     margin-top: ($line-height / 2);
-    margin-bottom: ($line-height / 2);
-    font-size: $font-size--h4;
-    line-height: 1.4;
-    font-weight: 700;
-    color: currentColor;
+    margin-bottom: 15px;
+    font-size: 30px;
+    font-weight: 400;
+  }
+
+  &__sub-title {
+    color: #999999;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 0;
   }
 
   &__close {
     position: absolute !important; // stylelint-disable-line  declaration-no-important
-    top: 5px;
-    right: 5px;
+    top: 19px;
+    right: 17px;
   }
 
   &__body {
     padding: 0 10px;
     flex-grow: 1;
+    max-width: 320px;
+    margin: auto;
+  }
+
+  &__form {}
+  &__form-field {
+    margin-bottom: 18px;
   }
 
   &__footer {
-    padding: 10px;
+    padding: 10px 10px 40px 10px;
     flex-shrink: 0;
+    text-align: center;
+
+    .field-actions {
+      &__text {
+        color: #999999;
+        font-size: 14px;
+        font-weight: 400;
+      }
+
+      .field-checkbox__name-text {
+        color: #999999;
+        font-size: 14px;
+        font-weight: 400;        
+      }
+    }
   }
 
   &__backdrop {
