@@ -19,20 +19,20 @@ $border-radius:               3px !default;
   box-sizing: border-box;
   display: inline-block;
   margin: 0;
-  padding: 0 15px;
-  min-width: 270px;
-  height: 64px;
+  padding: 0 37px;
+  min-width: 311px;
+  height: 74px;
   white-space: nowrap;
   vertical-align: middle;
   user-select: none;
   text-align: center;
   font-size: 16px;
   font-family: inherit;
-  line-height: 60px;
+  line-height: 72px;
   text-decoration: none;
   text-transform: none;
   color: #fff;
-  border-radius: 30px;
+  border-radius: 36.8px;
   border: 1px solid #4167f2;
   border-bottom: 5px solid #173bc1;
   background-color: #4167f2;
@@ -64,6 +64,11 @@ $border-radius:               3px !default;
     @at-root a.btn--disabled {
       pointer-events: none;
     }
+  }
+
+  .btn-icon {
+    vertical-align: middle;
+    margin-right: 17px;
   }
 
   // &__icon {
