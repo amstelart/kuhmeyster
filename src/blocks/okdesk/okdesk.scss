@@ -11,8 +11,9 @@
   background-position: 50% 50%;
   background-size: cover;
   color: #fff;
-  padding-top: 4.8vw;
-  padding-bottom: 4.8vw;
+  padding-top: 7vw;
+  padding-bottom: 8vw;
+  position: relative;
 
   &__wrap {
     display: flex;
@@ -81,5 +82,4 @@
       margin-bottom: 30px;
     }
   }
-
 }

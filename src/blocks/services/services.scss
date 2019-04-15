@@ -10,8 +10,9 @@
   background-image: url('../img/services-bg.jpg');
   background-position: 50% 50%;
   background-size: cover;
+  position: relative;
   color: #fff;
-  padding-top: 7.4vw;
+  padding-top: 10vw;
   padding-bottom: 7.4vw;
 
   &__title {
@@ -65,5 +66,4 @@
   &__action {
     text-align: center;
   }
-
 }

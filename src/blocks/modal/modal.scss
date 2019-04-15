@@ -120,7 +120,7 @@ $z-index-modal:               100 !default;
       .field-checkbox__name-text {
         color: #999999;
         font-size: 14px;
-        font-weight: 400;        
+        font-weight: 400;
       }
     }
   }
@@ -145,6 +145,33 @@ $z-index-modal:               100 !default;
       display: flex;
       justify-content: center;
       align-items: center;
+    }
+  }
+
+  &--text {
+    #{$block-name}__body {
+      max-width: inherit;
+
+      @media (min-width: $screen-lg) {
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+    }
+
+    #{$block-name}__dialog {
+      @media (min-width: $screen-lg) {
+        width: 746px;
+        height: auto;
+      }
+    }
+
+    &.modal--open {
+      @media (min-width: $screen-lg) {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        margin-top: 40px;
+      }
     }
   }
 }
