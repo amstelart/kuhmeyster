@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Кухмейстер</title>
+  <title>Кухмейстер - Обслуживание и ремонт холодильного и торгово-технологического оборудования любой сложности</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="format-detection" content="telephone=no">
@@ -67,7 +67,7 @@
                   Подбор оборудования
                 </a>
               </li>
-              <li class="main-nav__item main-nav__item--active">
+              <li class="main-nav__item">
                 <a href="#land_3" data-scroll-link class="main-nav__link">
                   Нам доверяют
                 </a>
@@ -131,7 +131,7 @@
                 </div>
               </div>
             </div>
-            <a href="#" class="btn">Задать вопрос</a>
+            <a href="#modal-question" data-toggle="modal" class="btn">Задать вопрос</a>
           </div>
           <div class="wave-01"></div>
         </section>
@@ -238,7 +238,7 @@
               </li>
             </ul>
             <div class="services__action">
-              <a href="#" class="btn">
+              <a href="#modal-selection" data-toggle="modal" class="btn">
                 <svg class="btn-icon"
                  xmlns="http://www.w3.org/2000/svg"
                  xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -375,7 +375,7 @@
                 <a href="#modal-call" data-toggle="modal" class="btn">Заказать звонок</a>
               </div>
               <div class="contacts__map">
-                <img src="img/map.jpg" alt="">
+                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A3bb246b942522e0a9bea74d64ac7718f20dddbda6922cb9aa59f8c0ee46754b1&width=100%25&height=600&lang=ru_RU&scroll=false"></script>
               </div>
             </div>
           </div>
@@ -466,7 +466,49 @@
               <div class="field-checkbox">
                 <label class="field-checkbox__name">
                   <input class="field-checkbox__input" type="checkbox" id="" name="" checked>
-                  <span class="field-checkbox__name-text">Я согласен с условиями обработки данных</span>
+                  <span class="field-checkbox__name-text">Я согласен с <a href="#modal-politics" data-toggle="modal">условиями обработки данных</a></span>
+                </label>
+              </div>
+              <div class="field-actions__text">* — обязательные поля</div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-question" class="modal" tabindex="-1" role="dialog">
+    <div class="modal__dialog" role="document">
+      <div class="modal__content">
+        <div class="modal__header">
+          <a href="#" class="close  modal__close" data-dismiss="modal" aria-label="Закрыть"><span></span></a>
+          <h4 class="modal__title">Задать вопрос</h4>
+          <p class="modal__sub-title">Наши менеджеры перезвонят вам и ответят на все вопросы</p>
+        </div>
+        <div class="modal__body">
+          <form action="" class="modal__form">
+            <label class="field-text modal__form-field">
+              <span class="field-text__input-wrap">
+                <input class="field-text__input icon icon--user" type="text" placeholder="Имя" id="" name="">
+              </span>
+            </label>
+            <label class="field-text modal__form-field">
+              <span class="field-text__input-wrap">
+                <input class="field-text__input icon icon--phone phone-mask" type="text" placeholder="Телефон" id="" name="">
+              </span>
+            </label>
+            <div class="modal__form-field">
+              <button type="submit" class="btn">Отправить заявку</button>
+            </div>
+          </form>
+        </div>
+        <div class="modal__footer">
+          <form action="">
+            <div class="field-actions">
+              <div class="field-checkbox">
+                <label class="field-checkbox__name">
+                  <input class="field-checkbox__input" type="checkbox" id="" name="" checked>
+                  <span class="field-checkbox__name-text">Я согласен с <a href="#modal-politics" data-toggle="modal">условиями обработки данных</a></span>
                 </label>
               </div>
               <div class="field-actions__text">* — обязательные поля</div>
@@ -513,7 +555,54 @@
               <div class="field-checkbox">
                 <label class="field-checkbox__name">
                   <input class="field-checkbox__input" type="checkbox" id="" name="" checked>
-                  <span class="field-checkbox__name-text">Я согласен с условиями обработки данных</span>
+                  <span class="field-checkbox__name-text">Я согласен с <a href="#modal-politics" data-toggle="modal">условиями обработки данных</a></span>
+                </label>
+              </div>
+              <div class="field-actions__text">* — обязательные поля</div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-selection" class="modal" tabindex="-1" role="dialog">
+    <div class="modal__dialog" role="document">
+      <div class="modal__content">
+        <div class="modal__header">
+          <a href="#" class="close  modal__close" data-dismiss="modal" aria-label="Закрыть"><span></span></a>
+          <h4 class="modal__title">Подберем оборудование</h4>
+          <p class="modal__sub-title">Мы проводим работы от подбора до монтажа оборудования</p>
+        </div>
+        <div class="modal__body">
+          <form action="" class="modal__form">
+            <label class="field-text modal__form-field">
+              <span class="field-text__input-wrap">
+                <input class="field-text__input icon icon--user" type="text" placeholder="Имя" id="" name="">
+              </span>
+            </label>
+            <label class="field-text modal__form-field">
+              <span class="field-text__input-wrap">
+                <input class="field-text__input icon icon--phone phone-mask" type="text" placeholder="Телефон" id="" name="">
+              </span>
+            </label>
+            <label class="field-text modal__form-field">
+              <span class="field-text__input-wrap">
+                <input class="field-text__input icon icon--email" type="email" placeholder="Email*" id="" name="">
+              </span>
+            </label>
+            <div class="modal__form-field">
+              <button type="submit" class="btn">Отправить заявку</button>
+            </div>
+          </form>
+        </div>
+        <div class="modal__footer">
+          <form action="">
+            <div class="field-actions">
+              <div class="field-checkbox">
+                <label class="field-checkbox__name">
+                  <input class="field-checkbox__input" type="checkbox" id="" name="" checked>
+                  <span class="field-checkbox__name-text">Я согласен с <a href="#modal-politics" data-toggle="modal">условиями обработки данных</a></span>
                 </label>
               </div>
               <div class="field-actions__text">* — обязательные поля</div>
